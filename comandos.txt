@@ -1,0 +1,37 @@
+CONOCER LA VERSIÓN DE GIT
+git --version / git -v
+
+CONFIGURACIÓN DE CREDENCIALES DE GIT (UNA VEZ POR COMPUTADOR)
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+
+git config --global --list : Permite revisar las credenciales ingresadas
+
+INICIALIZAR UN REPOSITORIO LOCAL CON GIT
+git init
+
+LISTA ARCHIVOS Y DIRECTORIOS POR CONSOLA
+ls / ls -a : el -a muestra archivos y directorios ocultos
+
+COMANDO QUE SE EJECUTAN DE FORMA REPETIDA / DE TRABAJO  
+git add . / git add -a / git add --all / git add index.html
+git commit -m "redactamos un mensaje claro con lo que se hizo"
+git push : permite enviar los cambio / versiones locales al repositorio remoto
+
+COMANDOS PARA CONOCER EL ESTADO DE CAMBIOS Y VERSIONES
+git status : conocer el estado de cambios   
+git log / git log --oneline: conocer el registro de versiones 
+
+COMANDO PARA CREAR RAMAS Y CAMBIARSE
+git branch : muestra una lista de las ramas existentes y nos indica en cual estamos
+git branch [nombre/rama] : permite crear una nueva rama de trabajo
+git checkout [nombre/rama] : permite moverse entre ramas
+git branch -d [nombre/rama] : permite eliminar una rama 
+git checkout -b : crea una nueva rama y nos cambia inmediatamente a ella 
+
+FUSIONAR RAMAS PARA INCLUIR CAMBIOS DE UNA RAMA A OTRA 
+git merge : desde una rama por ejemplo main, traer los cambios de otra rama por ejemplo "feature/productos"
+
+ENLAZAR REPOSITORIO REMOTO CON LOCAL
+git remote add origin [ruta repositorio]
+git remote -v :permite verificar si quedó bien enlazado
